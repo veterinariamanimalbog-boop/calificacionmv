@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Califica nuestro servicio - Veterinaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>¿Cómo fue tu experiencia hoy?</h2>
+        <p>Tu opinión nos ayuda a cuidar mejor de tus mascotas.</p>
+
+        <form id="ratingForm">
+            <label for="veterinario">Selecciona al Veterinario:</label>
+            <select id="veterinario" required>
+                <option value="">-- Elige un médico --</option>
+                <option value="dr-vargas">Dr. Miguel Vargas</option>
+                <option value="dra-lascarro">Dra. Alondra Lascarro</option>
+                <option value="dr-chaves">Dr. Jhon Chaves</option>
+                <option value="dra-rivera">Dra. Camila Rivera</option>
+                <option value="dra-estrada">Dra. Daniela Estrada</option>
+            </select>
+
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+
+            <textarea id="comentario" placeholder="Cuéntanos más detalles..." rows="4"></textarea>
+
+            <button type="submit">Enviar Calificación</button>
+        </form>
+        <div id="mensajeExito" style="display:none;">¡Gracias por tu mensaje!</div>
+    </div>
+</body>
+</html>
