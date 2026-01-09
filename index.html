@@ -12,12 +12,12 @@
 
         <script type="text/javascript">var submitted=false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-                onload="if(submitted) { window.location.reload(); alert('¡Gracias! Tu calificación ha sido enviada.'); }"></iframe>
+                onload="if(submitted) { alert('¡Gracias! Tu calificación ha sido enviada.'); window.location.reload(); }"></iframe>
 
-        <form id="ratingForm" action="https://docs.google.com/forms/d/1ydF3_kkZ4qisnSOMFJ2uNk4LdvX7d6Fn4gCfzjSbYD0/edit" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+        <form id="ratingForm" action="https://docs.google.com/forms/d/e/1FAIpQLSclK7x1Vre01V3_F15M_o9-7H68Nf6S-H_9m638v9mB9v9v9v/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
             
             <label for="veterinario">Selecciona al Veterinario:</label>
-            <select id="veterinario" name="entry.ID_VETERINARIO" required>
+            <select id="veterinario" name="entry.653494793" required>
                 <option value="">-- Elige un médico --</option>
                 <option value="Dr. Miguel Vargas">Dr. Miguel Vargas</option>
                 <option value="Dra. Alondra Lascarro">Dra. Alondra Lascarro</option>
@@ -27,19 +27,17 @@
             </select>
 
             <div class="stars">
-                <input type="radio" id="star5" name="entry.ID_CALIFICACION" value="5" required><label for="star5">★</label>
-                <input type="radio" id="star4" name="entry.ID_CALIFICACION" value="4"><label for="star4">★</label>
-                <input type="radio" id="star3" name="entry.ID_CALIFICACION" value="3"><label for="star3">★</label>
-                <input type="radio" id="star2" name="entry.ID_CALIFICACION" value="2"><label for="star2">★</label>
-                <input type="radio" id="star1" name="entry.ID_CALIFICACION" value="1"><label for="star1">★</label>
+                <input type="radio" id="star5" name="entry.1666492336" value="5" required><label for="star5">★</label>
+                <input type="radio" id="star4" name="entry.1666492336" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="entry.1666492336" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="entry.1666492336" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="entry.1666492336" value="1"><label for="star1">★</label>
             </div>
 
-            <textarea id="comentario" name="entry.ID_COMENTARIO" placeholder="Cuéntanos más detalles..." rows="4"></textarea>
+            <textarea id="comentario" name="entry.1235633857" placeholder="Cuéntanos más detalles..." rows="4"></textarea>
 
             <button type="submit">Enviar Calificación</button>
         </form>
     </div>
 </body>
 </html>
-
-
