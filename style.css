@@ -1,14 +1,58 @@
-body { font-family: 'Arial', sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; padding: 50px; }
-.container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
-select, textarea, button { width: 100%; margin-top: 15px; padding: 10px; border-radius: 5px; border: 1px solid #ddd; }
+body { 
+    font-family: 'Arial', sans-serif; 
+    background-color: #6ff0a5; /* Tu verde institucional */
+    display: flex; 
+    flex-direction: column; /* Alinea el contenido y el logo verticalmente */
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px 20px;
+}
+
+.container { 
+    background: rgb(173, 97, 224); /* Tu morado institucional */
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    width: 100%; 
+    max-width: 400px; 
+    text-align: center; 
+    color: white; /* Texto en blanco para que resalte sobre el morado */
+}
+
+select, textarea, button { 
+    width: 100%; 
+    margin-top: 15px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ddd; 
+}
 
 /* Estilo de las estrellas */
 .stars { direction: rtl; font-size: 30px; padding: 10px 0; }
 .stars input { display: none; }
-.stars label { color: #ddd; cursor: pointer; transition: color 0.2s; }
+.stars label { color: #eee; cursor: pointer; transition: color 0.2s; }
 .stars label:hover, .stars label:hover ~ label, .stars input:checked ~ label {
     color: #f5b301;
 }
 
-button { background-color: #27ae60; color: white; border: none; cursor: pointer; font-weight: bold; }
-button:hover { background-color: #219150; }
+button { 
+    background-color: #27ae60; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 16px;
+}
+
+button:hover { 
+    background-color: #219150; 
+}
+
+/* ESTILO PARA EL LOGO ABAJO */
+.logo-footer {
+    margin-top: 40px; /* Espacio entre el formulario y el logo */
+    width: 150px;    /* Ajusta el ancho de tu logo */
+    height: auto;
+    opacity: 0.9;    /* Un poco de transparencia para que sea sutil */
+}
