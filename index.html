@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Califica nuestro servicio - Veterinaria</title>
+    <title>Califica nuestro servicio - Veterinaria Manimal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,35 +10,32 @@
         <h2>¿Cómo fue tu experiencia hoy?</h2>
         <p>Tu opinión nos ayuda a cuidar mejor de tus mascotas.</p>
 
-        <script type="text/javascript">var submitted=false;</script>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-                onload="if(submitted) { alert('¡Gracias! Tu calificación ha sido enviada correctamente.'); window.location.reload(); }"></iframe>
+        <form action="https://formspree.io/f/TU_CODIGO_AQUÍ" method="POST">
+            
+            <label for="veterinario">Selecciona al Veterinario:</label>
+            <select id="veterinario" name="Veterinario" required>
+                <option value="">-- Elige un médico --</option>
+                <option value="Dra. Camila Rivera">Dra. Camila Rivera</option>
+                <option value="Dr. Miguel Vargas">Dr. Miguel Vargas</option>
+                <option value="Dra. Alondra Lascarro">Dra. Alondra Lascarro</option>
+                <option value="Dr. Jhon Chaves">Dr. Jhon Chaves</option>
+                <option value="Dra. Daniela Estrada">Dra. Daniela Estrada</option>
+            </select>
 
-        <form id="ratingForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe_i2jZEKSrV1XlzaOIa68qJiGjCAtazf25iNKhufuBxRD24Q/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-    
-    <label for="veterinario">Selecciona al Veterinario:</label>
-    <select id="veterinario" name="entry.1790760646" required>
-        <option value="">-- Elige un médico --</option>
-        <option value="Dra. Camila Rivera">Dra. Camila Rivera</option>
-        <option value="Dr. Miguel Vargas">Dr. Miguel Vargas</option>
-        <option value="Dra. Alondra Lascarro">Dra. Alondra Lascarro</option>
-        <option value="Dr. Jhon Chaves">Dr. Jhon Chaves</option>
-        <option value="Dra. Daniela Estrada">Dra. Daniela Estrada</option>
-    </select>
+            <div class="stars">
+                <input type="radio" id="star5" name="Calificacion" value="5" required><label for="star5">★</label>
+                <input type="radio" id="star4" name="Calificacion" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="Calificacion" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="Calificacion" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="Calificacion" value="1"><label for="star1">★</label>
+            </div>
 
-    <div class="stars">
-        <input type="radio" id="star5" name="entry.1529248217" value="5" required><label for="star5">★</label>
-        <input type="radio" id="star4" name="entry.1529248217" value="4"><label for="star4">★</label>
-        <input type="radio" id="star3" name="entry.1529248217" value="3"><label for="star3">★</label>
-        <input type="radio" id="star2" name="entry.1529248217" value="2"><label for="star2">★</label>
-        <input type="radio" id="star1" name="entry.1529248217" value="1"><label for="star1">★</label>
-    </div>
+            <textarea id="comentario" name="Comentario" placeholder="Cuéntanos más detalles..." rows="4"></textarea>
 
-    <textarea id="comentario" name="entry.2131361773" placeholder="Cuéntanos más detalles..." rows="4"></textarea>
+            <input type="hidden" name="_next" value="https://veterinariamanimalbog-boop.github.io/calificacionmv/">
 
-    <button type="submit">Enviar Calificación</button>
-</form>
+            <button type="submit">Enviar Calificación</button>
+        </form>
     </div>
 </body>
 </html>
-
