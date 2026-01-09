@@ -12,7 +12,7 @@
 
         <script type="text/javascript">var submitted=false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-                onload="if(submitted) { alert('¡Gracias! Datos recibidos en el sistema.'); window.location.reload(); }"></iframe>
+                onload="if(submitted) { alert('¡Gracias! Hemos recibido tu opinión.'); window.location.reload(); }"></iframe>
 
         <form id="ratingForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe_i2jZEKSrV1XlzaOIa68qJiGjCAtazf25iNKhufuBxRD24Q/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
             
@@ -34,10 +34,7 @@
                 <input type="radio" id="star1" name="entry.1147047702" value="1"><label for="star1">★</label>
             </div>
 
-            <textarea id="comentario" name="entry.1384067931" placeholder="Cuéntanos más detalles..." rows="4"></textarea>
-
-            <input type="hidden" name="fvv" value="1">
-            <input type="hidden" name="pageHistory" value="0">
+            <textarea id="comentario" name="entry.1384067931" placeholder="Cuéntanos más detalles..."></textarea>
 
             <button type="submit">Enviar Calificación</button>
         </form>
