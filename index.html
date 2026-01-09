@@ -14,32 +14,30 @@
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
                 onload="if(submitted) { alert('¡Gracias! Tu calificación ha sido enviada.'); window.location.reload(); }"></iframe>
 
-        <form id="ratingForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe_i2jZEKSrV1XlzaOIa68qJiGjCAtazf25iNKhufuBxRD24Q/viewform?usp=preview/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-    
-    <label for="veterinario">Selecciona al Veterinario:</label>
-    <select id="veterinario" name="entry.XXXXX_VET" required>
-        <option value="">-- Elige un médico --</option>
-        <option value="Dr. Miguel Vargas">Dr. Miguel Vargas</option>
-        <option value="Dra. Alondra Lascarro">Dra. Alondra Lascarro</option>
-        <option value="Dr. Jhon Chaves">Dr. Jhon Chaves</option>
-        <option value="Dra. Camila Rivera">Dra. Camila Rivera</option>
-        <option value="Dra. Daniela Estrada">Dra. Daniela Estrada</option>
-    </select>
+        <form id="ratingForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe_i2jZEKSrV1XlzaOIa68qJiGjCAtazf25iNKhufuBxRD24Q/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+            
+            <label for="veterinario">Selecciona al Veterinario:</label>
+            <select id="veterinario" name="entry.1475654322" required>
+                <option value="">-- Elige un médico --</option>
+                <option value="Dr. Miguel Vargas">Dr. Miguel Vargas</option>
+                <option value="Dra. Alondra Lascarro">Dra. Alondra Lascarro</option>
+                <option value="Dr. Jhon Chaves">Dr. Jhon Chaves</option>
+                <option value="Dra. Camila Rivera">Dra. Camila Rivera</option>
+                <option value="Dra. Daniela Estrada">Dra. Daniela Estrada</option>
+            </select>
 
-    <div class="stars">
-        <input type="radio" id="star5" name="entry.XXXXX_STARS" value="5" required><label for="star5">★</label>
-        <input type="radio" id="star4" name="entry.XXXXX_STARS" value="4"><label for="star4">★</label>
-        <input type="radio" id="star3" name="entry.XXXXX_STARS" value="3"><label for="star3">★</label>
-        <input type="radio" id="star2" name="entry.XXXXX_STARS" value="2"><label for="star2">★</label>
-        <input type="radio" id="star1" name="entry.XXXXX_STARS" value="1"><label for="star1">★</label>
-    </div>
+            <div class="stars">
+                <input type="radio" id="star5" name="entry.161836267" value="5" required><label for="star5">★</label>
+                <input type="radio" id="star4" name="entry.161836267" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="entry.161836267" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="entry.161836267" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="entry.161836267" value="1"><label for="star1">★</label>
+            </div>
 
-    <textarea id="comentario" name="entry.XXXXX_COMM" placeholder="Cuéntanos más detalles..." rows="4"></textarea>
+            <textarea id="comentario" name="entry.1968875326" placeholder="Cuéntanos más detalles..." rows="4"></textarea>
 
-    <button type="submit">Enviar Calificación</button>
-</form>
+            <button type="submit">Enviar Calificación</button>
+        </form>
     </div>
 </body>
 </html>
-
-
