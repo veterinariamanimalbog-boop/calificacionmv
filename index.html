@@ -12,18 +12,18 @@
 
         <script type="text/javascript">var submitted=false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-                onload="if(submitted) { alert('¡Gracias! Hemos recibido tu opinión.'); window.location.reload(); }"></iframe>
+                onload="if(submitted) { alert('¡Muchas gracias! Tu calificación ha sido registrada.'); window.location.reload(); }"></iframe>
 
         <form id="ratingForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe_i2jZEKSrV1XlzaOIa68qJiGjCAtazf25iNKhufuBxRD24Q/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
             
             <label for="veterinario">Selecciona al Veterinario:</label>
             <select id="veterinario" name="entry.1044465408" required>
                 <option value="">-- Elige un médico --</option>
-                <option value="Miguel Vargas">Dr. Miguel Vargas</option>
-                <option value="Alondra Lascarro">Dra. Alondra Lascarro</option>
-                <option value="Jhon Chaves">Dr. Jhon Chaves</option>
-                <option value="Camila Rivera">Dra. Camila Rivera</option>
-                <option value="Daniela Estrada">Dra. Daniela Estrada</option>
+                <option value="Dra. Camila Rivera">Dra. Camila Rivera</option>
+                <option value="Dr. Miguel Vargas">Dr. Miguel Vargas</option>
+                <option value="Dra. Alondra Lascarro">Dra. Alondra Lascarro</option>
+                <option value="Dr. Jhon Chaves">Dr. Jhon Chaves</option>
+                <option value="Dra. Daniela Estrada">Dra. Daniela Estrada</option>
             </select>
 
             <div class="stars">
@@ -34,7 +34,7 @@
                 <input type="radio" id="star1" name="entry.1147047702" value="1"><label for="star1">★</label>
             </div>
 
-            <textarea id="comentario" name="entry.1384067931" placeholder="Cuéntanos más detalles..."></textarea>
+            <textarea id="comentario" name="entry.1384067931" placeholder="Cuéntanos más detalles..." rows="4"></textarea>
 
             <button type="submit">Enviar Calificación</button>
         </form>
